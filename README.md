@@ -39,13 +39,14 @@ Contains more than 10,000 records of restaurants' in Sydney in the year 2018.
     - In the context of Part B of the analysis, the process involved the utilization of a geojson file named 'sydney.geojson,' which was included within the dataset. This file was employed for the purpose of merging with the original dataset, thereby introducing additional attributes, specifically the SSC_CODE (State Suburbs Code), and incorporating geometric polygonal information.
     - Matplotlib was employed to generate a heatmap illustrating the distribution of restaurants within a particular suburb, with the representation of data being contingent on cuisine type.
     ![Matplotlib heatmap](https://github.com/Adnan525/syd_restaurant/blob/master/matplotlib_heatmap.JPG)
-    - Folium was used to generate the same heatmap but had interactive features, like zoom, moving capability etc.
+    - Folium was used to generate the same heatmap but had interactive features, like zoom, moving capability etc.  
     ![Folium heatmap](https://github.com/Adnan525/syd_restaurant/blob/master/folium_heatmap.JPG)
 
 - Part C contains 2 regression models that predicts the rating of a restaurant, based on features available in the dataset. The section also contains a binary-classification model using logistic regression that classifies the restaurants between (poor, average) = 1 and (good, very good, excellent) = 2.
     - Regression model 1 had - MSE : 0.1469729505451935 and RMSE : 0.2540572715441253
     - Regression model 2 used gradient descent and standardized values, had - MSE : 0.1490877358715363 and RMSE : 0.2433239445572284
-    - The classification model 3 had -  
+    - The classification model 3 had -
+
 | Metric           | Value                  |
 |------------------|------------------------|
 | Accuracy         | 0.9853862212943633     |
@@ -56,7 +57,8 @@ Contains more than 10,000 records of restaurants' in Sydney in the year 2018.
 | Confusion Matrix|937   8                
 |                 |  13  479               |
 
-- Part 3 alos contains 4 classification models using Support vector Machine with Linear and Radial Bias Function Kernel, Decision Tree and Random Forest modelling. The accuracy metrics for those models are - 
+- Part 3 alos contains 4 classification models using Support vector Machine with Linear and Radial Bias Function Kernel, Decision Tree and Random Forest modelling. The accuracy metrics for those models are -
+  
 | Model          | Accuracy | Precision | Recall  | F1 Score | ROC AUC  |
 |----------------|----------|-----------|---------|----------|----------|
 | Linear SVM     | 1.000    | 0.986316  | 0.991534| 0.988918 | 0.982556 |
